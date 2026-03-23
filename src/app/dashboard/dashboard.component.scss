@@ -1,0 +1,67 @@
+.main-container {
+    padding: 20px;
+    margin: 0px 20px 0px 20px;
+    background: #f5f6fa;
+}
+
+.top-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: linear-gradient(90deg, #3f51b5, #e91e63);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #1976d2;
+    color: white;
+}
+
+.summary {
+    background: #1565c0;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 20px 0px 20px;
+}
+
+
+.headerCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonParent{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}

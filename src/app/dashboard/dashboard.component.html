@@ -1,0 +1,51 @@
+<!-- dashboard.component.html -->
+<div style="text-align: center;">
+    <h1>Finance Automation Mini Tool (MVP)</h1>
+</div>
+<div class="main-container headerCard"  >
+    <input type="file" (change)="onFileChange($event)" />
+    <div class="buttonParent">
+        <button (click)="showSummary()">Show Summary</button>
+        <button (click)="calculate()">Calculate</button>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="card">
+    <h3>Invoice List</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Party</th>
+          <th>Amount</th>
+          <th>GST %</th>
+          <th>Type</th>
+          <th>GST</th>
+          <th>High Value</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let t of transactions">
+          <td>{{t.date}}</td>
+          <td>{{t.partyName}}</td>
+          <td>{{t.amount}}</td>
+          <td>{{t.gstPercent}}</td>
+          <td>{{t.invoiceType}}</td>
+          <td>{{t.gstAmount}}</td>
+          <td>{{t.highValue ? 'Yes' : 'No'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div>Total Sales (Rs): {{totalSales}}</div>
+    <div>Total Purchase (Rs): {{totalPurchase}}</div>
+    <div>Total GST (Rs): {{totalGST}}</div>
+  </div>
+
+<!-- </div> -->
